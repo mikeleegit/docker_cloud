@@ -1,4 +1,4 @@
-FROM java
+FROM centos:7
 MAINTAINER mike
 
 RUN yum install -y wget
