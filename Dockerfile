@@ -3,9 +3,9 @@ MAINTAINER jack
 
 RUN yum install -y wget
 
-RUN cd  /
+RUN cd  /home/iii/test_docker
 
-ADD jdk-8u152-linux-x64.tar.gz  /
+ADD jdk-8u152-linux-x64.tar.gz  /home/iii/test_docker
 
 RUN wget http://apache.stu.edu.tw/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
 RUN tar zxvf apache-tomcat-7.0.82.tar.gz
