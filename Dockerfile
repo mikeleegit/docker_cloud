@@ -5,7 +5,7 @@ RUN apt-get install -y wget
 
 RUN cd /
 
-RUN wget https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html/jdk-8u251-linux-x64.tar.gz
+RUN wget https://mirrors.huaweicloud.com/java/jdk/8u152-b16/jdk-8u152-linux-x64.tar.gz
 
 RUN tar zxvf jdk-8u251-linux-x64.tar.gz
 
