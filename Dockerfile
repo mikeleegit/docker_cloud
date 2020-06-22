@@ -7,7 +7,7 @@ RUN cd /
 
 RUN wget https://mirrors.huaweicloud.com/java/jdk/8u152-b16/jdk-8u152-linux-x64.tar.gz
 
-RUN tar zxvf jdk-8u251-linux-x64.tar.gz
+RUN tar zxvf jdk-8u152-linux-x64.tar.gz
 
 RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
 
