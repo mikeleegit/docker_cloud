@@ -1,8 +1,17 @@
-FROM ubuntu:18.04
-MAINTAINER mike
+FROM centos:7
+MAINTAINER jack
 
-RUN apt update && apt install nginx -y
+RUN yum install -y wget
 
-CMD service nginx start && /bin/bash
+RUN cd /
+
+ADD jdk-8u152-linux-x64.tar.gz /
+
+RUN wget http://apache.stu.edu.tw/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
+RUN tar zxvf apache-tomcat-7.0.82.tar.gz
+
+ENV JAVA_HOME=/jdk1.8.0_152
+ENV PATH=$PATH:/jdk1.8.0_152/bin
+CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]
 
 EXPOSE 8080
