@@ -1,5 +1,5 @@
-FROM ubuntu1:8.04
-MAINTAINER jack
+FROM ubuntu:18.04
+MAINTAINER mike
 RUN apt-get update
 RUN apt-get install -y wget
 
